@@ -1,0 +1,7 @@
+project: savantenvs/mongo-go-driver
+target: fuzz-decode-buggy-mhh-run-7
+# origin: https://app.mayhem.security/mayhemheroes/mongo-go-driver/fuzz-decode/7
+cmds:
+  - cmd: /mayhem/fuzz_decode
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_decode.dict
