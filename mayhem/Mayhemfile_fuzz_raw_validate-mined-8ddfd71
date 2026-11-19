@@ -1,0 +1,9 @@
+project: savantenvs/mongo-go-driver
+target: fuzz_raw_validate-mined-8ddfd71
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_raw_validate-mined-8ddfd71/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_raw_validate
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_raw_validate-mined-8ddfd71/fuzz_raw_validate-mined-8ddfd71.dict
